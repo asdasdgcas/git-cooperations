@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+
+
+
+
+
+        {
+            "name": "GNSS Debug",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/rnx2rtkp.exe",
+            "args": [
+                "-k",
+                "${workspaceFolder}/IGS-Data/GNSS_Option.opt",
+                "-x",
+                "5"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\bin\\gdb.exe"
+        },
+        {
+            "name": "GNSS Run (No Debug)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/rnx2rtkp.exe",
+            "args": [
+                "-k",
+                "${workspaceFolder}/IGS-Data/GNSS_Option.opt",
+                "-x",
+                "5"
+            ],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": true,
+            "MIMode": "gdb",
+            "miDebuggerPath": "D:\\x86_64-8.1.0-release-win32-seh-rt_v6-rev0\\bin\\gdb.exe",
+            "console": "externalTerminal",
+            "preLaunchTask": "link-only"
+        }
+    ]
+}

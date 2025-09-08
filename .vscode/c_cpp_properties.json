@@ -1,0 +1,21 @@
+{
+    "version": 4,
+    "configurations": [
+      {
+        "name": "Win64-MinGW",
+        "compilerPath": "D:/x86_64-8.1.0-release-win32-seh-rt_v6-rev0/bin/gcc.exe",
+        "intelliSenseMode": "gcc-x64",
+        "cppStandard": "c++11",
+        "includePath": [
+          "${workspaceFolder}/src",
+          "${workspaceFolder}/src/Nequick/lib/private",
+          "${workspaceFolder}/src/Nequick/lib/public"
+        ],
+        "defines": [
+          "WIN32","NDEBUG","_CONSOLE","_CRT_SECURE_NO_DEPRECATE",
+          "ENAGLO","ENACMP","ENAGAL","NFREQ=6","TRACE"
+        ]
+      }
+    ]
+  }
+  

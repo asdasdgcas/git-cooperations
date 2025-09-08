@@ -1,0 +1,12 @@
+{
+    "pos_file_path": "IGS-Data/JBDH/2025/121/JBDH_2025_121_WUH2_B_D.pos",
+    "device_id": "DEADBEEFCAFEBABE",
+    "link_id": 1024,
+    "sync_status": "beidouLocked",
+    "src_ip": "2001:db8:1::1",
+    "dst_ip": "2001:db8:2::2",
+    "processing_mode": "single",
+    "realtime_interval": 1.0,
+    "output_format": "json",
+    "log_level": "INFO"
+}
