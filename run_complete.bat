@@ -112,18 +112,20 @@ echo 📊 查看 gnss_stamp.log 文件获取详细日志
 echo 📁 输出文件位置：IGS-Data\JBDH\2025\121\
 echo.
 
-REM 询问是否查看日志
-set /p view_log="是否现在查看日志文件？(y/n): "
-if /i "%view_log%"=="y" (
-    if exist "gnss_stamp.log" (
-        echo.
-        echo 📋 日志文件内容：
-        echo ═══════════════════════════════════════════════════════════════
-        type "gnss_stamp.log"
-        echo ═══════════════════════════════════════════════════════════════
-    ) else (
-        echo ❌ 日志文件不存在
-    )
+REM 自动显示输出文件信息
+echo 📁 输出文件说明：
+echo   - GNSS定位结果：IGS-Data\JBDH\2025\121\JBDH_2025_121_WUH2_B_D.pos
+echo   - GNSS业务日志：IGS-Data\JBDH\JBDH_2025_121_WUH2_D.log
+echo   - STAMP编码结果：IGS-Data\STAMP-Output\
+echo   - STAMP处理日志：gnss_stamp.log
+echo.
+echo 📋 最新GNSS业务日志：
+if exist "IGS-Data\JBDH\JBDH_2025_121_WUH2_D.log" (
+    echo ═══════════════════════════════════════════════════════════════
+    powershell "Get-Content 'IGS-Data\JBDH\JBDH_2025_121_WUH2_D.log' -Tail 3"
+    echo ═══════════════════════════════════════════════════════════════
+) else (
+    echo ❌ GNSS业务日志文件不存在
 )
 
 echo.
