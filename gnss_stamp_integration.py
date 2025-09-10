@@ -141,12 +141,10 @@ class NetworkTransmitter:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         self.hex_output_file = os.path.join(self.output_dir, f"stamp_encoded_{timestamp}.hex")
         self.json_output_file = os.path.join(self.output_dir, f"stamp_results_{timestamp}.json")
-        self.binary_output_file = os.path.join(self.output_dir, f"stamp_binary_{timestamp}.bin")
         
         logger.info(f"输出文件将保存到: {self.output_dir}")
         logger.info(f"HEX文件: {self.hex_output_file}")
         logger.info(f"JSON文件: {self.json_output_file}")
-        logger.info(f"二进制文件: {self.binary_output_file}")
         
     def enqueue_stamp_packet(self, stamp_payload: bytes):
         """将STAMP数据包加入传输队列"""
@@ -197,12 +195,6 @@ class NetworkTransmitter:
                 f.write(f"#{self.transmitted_count + 1} [{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] "
                        f"长度={len(stamp_payload)}字节\n")
                 f.write(f"{stamp_payload.hex().upper()}\n\n")
-            
-            # 实时写入二进制文件
-            with open(self.binary_output_file, 'ab') as f:
-                # 写入长度信息（4字节）和数据
-                f.write(len(stamp_payload).to_bytes(4, 'big'))
-                f.write(stamp_payload)
                 
         except Exception as e:
             logger.error(f"保存编码结果失败: {e}")
@@ -236,7 +228,6 @@ class NetworkTransmitter:
             logger.info(f"   📁 输出目录: {self.output_dir}")
             logger.info(f"   📄 HEX文件: {os.path.basename(self.hex_output_file)} ({len(self.encoded_results)} 个数据包)")
             logger.info(f"   📋 JSON文件: {os.path.basename(self.json_output_file)} (包含元数据和统计信息)")
-            logger.info(f"   🗃️  二进制文件: {os.path.basename(self.binary_output_file)} ({sum(result['payload_length'] for result in self.encoded_results)} 字节)")
             
         except Exception as e:
             logger.error(f"保存最终结果失败: {e}")
