@@ -126,12 +126,13 @@ class STAMPProcessor:
 class NetworkTransmitter:
     """网络传输器"""
     
-    def __init__(self, src_ip: str, dst_ip: str, output_dir: str = "IGS-Data/STAMP-Output"):
+    def __init__(self, src_ip: str, dst_ip: str, output_dir: str = "IGS-Data/STAMP-Output", config: dict = None):
         self.src_ip = src_ip
         self.dst_ip = dst_ip
         self.transmitted_count = 0
         self.transmission_queue = queue.Queue(maxsize=1000)
         self.output_dir = output_dir
+        self.config = config or {}
         self.encoded_results = []  # 存储编码结果
         
         # 创建输出目录
@@ -176,17 +177,28 @@ class NetworkTransmitter:
             return False
     
     def _save_encoded_result(self, stamp_payload: bytes):
-        """保存单个编码结果"""
+        """保存单个编码结果（包含解码信息）"""
         try:
-            # 记录编码结果
+            # 解码STAMP数据包获取详细信息
+            decoded_info = self._decode_stamp_payload(stamp_payload)
+            
+            # 记录编码结果（包含解码信息）
             result_info = {
-                'sequence': self.transmitted_count + 1,
-                'timestamp': datetime.now().isoformat(),
-                'payload_length': len(stamp_payload),
-                'payload_hex': stamp_payload.hex().upper(),
-                'src_ip': self.src_ip,
-                'dst_ip': self.dst_ip
+                'packet_index': self.transmitted_count + 1,
+                'encoding_timestamp': datetime.now().isoformat(),
+                'raw_data': {
+                    'payload_length': len(stamp_payload),
+                    'payload_hex': stamp_payload.hex().upper(),
+                    'src_ip': self.src_ip,
+                    'dst_ip': self.dst_ip
+                }
             }
+            
+            # 如果解码成功，添加解码信息
+            if decoded_info:
+                result_info.update(decoded_info)
+            else:
+                result_info['decode_error'] = 'Failed to decode STAMP payload'
             
             self.encoded_results.append(result_info)
             
@@ -199,25 +211,128 @@ class NetworkTransmitter:
         except Exception as e:
             logger.error(f"保存编码结果失败: {e}")
     
+    def _decode_stamp_payload(self, stamp_payload: bytes) -> dict:
+        """解码STAMP数据包获取详细信息"""
+        try:
+            from stamp_improved import SpatioTemporalPacket, der_decoder, der_encoder, Calculator, Configuration
+            from datetime import timezone
+            
+            # ASN.1 DER解码
+            decoded_packet, _ = der_decoder.decode(stamp_payload, asn1Spec=SpatioTemporalPacket())
+            
+            # 提取接收到的CRC
+            received_crc_bytes = bytes(decoded_packet['crc'])
+            
+            # 重新计算CRC进行校验
+            packet_for_crc_check = SpatioTemporalPacket()
+            for field_name in ['version', 'timestamp_sec', 'timestamp_nsec', 'latitude', 
+                              'longitude', 'altitude', 'device_id', 'link_id', 'sync_status']:
+                packet_for_crc_check[field_name] = decoded_packet[field_name]
+            packet_for_crc_check['crc'] = b'\x00\x00'
+            
+            # 计算CRC
+            data_for_crc = der_encoder.encode(packet_for_crc_check)
+            crc_config = Configuration(
+                width=16, 
+                polynomial=0x1021, 
+                init_value=0xFFFF, 
+                final_xor_value=0x0000, 
+                reverse_input=False, 
+                reverse_output=False
+            )
+            calculated_crc_bytes = Calculator(crc_config).checksum(data_for_crc).to_bytes(2, 'big')
+            
+            # 转换时间戳为可读格式
+            timestamp_sec = int(decoded_packet['timestamp_sec'])
+            timestamp_nsec = int(decoded_packet['timestamp_nsec'])
+            try:
+                dt = datetime.fromtimestamp(timestamp_sec, tz=timezone.utc)
+                microseconds = timestamp_nsec // 1000
+                dt = dt.replace(microsecond=microseconds)
+                datetime_utc = dt.isoformat()
+            except:
+                datetime_utc = f"INVALID_TIMESTAMP({timestamp_sec}.{timestamp_nsec:09d})"
+            
+            # 同步状态名称映射
+            sync_status_map = {
+                0: 'unknown',
+                1: 'gpsLocked', 
+                2: 'beidouLocked',
+                3: 'ppsStable',
+                4: 'ppsUnstable',
+                5: 'softwareSync'
+            }
+            sync_status_code = int(decoded_packet['sync_status'])
+            sync_status_name = sync_status_map.get(sync_status_code, f'UNKNOWN_STATUS({sync_status_code})')
+            
+            # 构建解码结果
+            decoded_info = {
+                'version': int(decoded_packet['version']),
+                'timestamp': {
+                    'timestamp_sec': timestamp_sec,
+                    'timestamp_nsec': timestamp_nsec,
+                    'datetime_utc': datetime_utc
+                },
+                'position': {
+                    'latitude': float(decoded_packet['latitude']),
+                    'longitude': float(decoded_packet['longitude']),
+                    'altitude': float(decoded_packet['altitude'])
+                },
+                'device_info': {
+                    'device_id': bytes(decoded_packet['device_id']).hex().upper(),
+                    'link_id': int(decoded_packet['link_id'])
+                },
+                'sync_info': {
+                    'sync_status': sync_status_code,
+                    'sync_status_name': sync_status_name
+                },
+                'validation': {
+                    'crc': received_crc_bytes.hex().upper(),
+                    'crc_valid': received_crc_bytes == calculated_crc_bytes
+                }
+            }
+            
+            return decoded_info
+            
+        except Exception as e:
+            logger.warning(f"解码STAMP数据包失败: {e}")
+            return None
+    
     def finalize_output(self):
         """完成处理后保存完整的JSON结果文件"""
         try:
-            # 准备完整的输出数据
+            # 统计编码成功和失败的数据包
+            successful_encodes = len([r for r in self.encoded_results if 'decode_error' not in r])
+            failed_encodes = len([r for r in self.encoded_results if 'decode_error' in r])
+            success_rate = (successful_encodes / len(self.encoded_results) * 100) if self.encoded_results else 0
+            
+            # 准备完整的输出数据（匹配解码器格式）
             output_data = {
                 'metadata': {
-                    'total_packets': len(self.encoded_results),
-                    'generation_time': datetime.now().isoformat(),
-                    'src_ip': self.src_ip,
-                    'dst_ip': self.dst_ip,
-                    'output_directory': self.output_dir
+                    'encoder_version': '2.0.0',
+                    'encode_timestamp': datetime.now().isoformat(),
+                    'source_file_info': {
+                        'pos_file': self.config.get('pos_file_path', 'unknown'),
+                        'device_id': self.config.get('device_id', 'unknown'),
+                        'link_id': self.config.get('link_id', 0),
+                        'output_directory': self.output_dir
+                    },
+                    'network_info': {
+                        'src_ip': self.src_ip,
+                        'dst_ip': self.dst_ip
+                    },
+                    'statistics': {
+                        'total_packets': len(self.encoded_results),
+                        'successful_encodes': successful_encodes,
+                        'failed_encodes': failed_encodes,
+                        'success_rate': success_rate,
+                        'total_bytes': sum(result['raw_data']['payload_length'] for result in self.encoded_results if 'raw_data' in result),
+                        'average_packet_size': sum(result['raw_data']['payload_length'] for result in self.encoded_results if 'raw_data' in result) / len(self.encoded_results) if self.encoded_results else 0,
+                        'min_packet_size': min(result['raw_data']['payload_length'] for result in self.encoded_results if 'raw_data' in result) if self.encoded_results else 0,
+                        'max_packet_size': max(result['raw_data']['payload_length'] for result in self.encoded_results if 'raw_data' in result) if self.encoded_results else 0
+                    }
                 },
-                'packets': self.encoded_results,
-                'statistics': {
-                    'total_bytes': sum(result['payload_length'] for result in self.encoded_results),
-                    'average_packet_size': sum(result['payload_length'] for result in self.encoded_results) / len(self.encoded_results) if self.encoded_results else 0,
-                    'min_packet_size': min(result['payload_length'] for result in self.encoded_results) if self.encoded_results else 0,
-                    'max_packet_size': max(result['payload_length'] for result in self.encoded_results) if self.encoded_results else 0
-                }
+                'encoded_packets': self.encoded_results
             }
             
             # 保存JSON文件
@@ -227,7 +342,8 @@ class NetworkTransmitter:
             logger.info(f"✅ STAMP编码结果已保存:")
             logger.info(f"   📁 输出目录: {self.output_dir}")
             logger.info(f"   📄 HEX文件: {os.path.basename(self.hex_output_file)} ({len(self.encoded_results)} 个数据包)")
-            logger.info(f"   📋 JSON文件: {os.path.basename(self.json_output_file)} (包含元数据和统计信息)")
+            logger.info(f"   📋 JSON文件: {os.path.basename(self.json_output_file)} (包含详细解码信息)")
+            logger.info(f"   📊 编码统计: 成功 {successful_encodes}/{len(self.encoded_results)} ({success_rate:.1f}%)")
             
         except Exception as e:
             logger.error(f"保存最终结果失败: {e}")
@@ -280,7 +396,7 @@ class GNSSSTAMPIntegration:
             src_ip = self.config.get('src_ip', '2001:db8:1::1')
             dst_ip = self.config.get('dst_ip', '2001:db8:2::2')
             
-            self.transmitter = NetworkTransmitter(src_ip, dst_ip)
+            self.transmitter = NetworkTransmitter(src_ip, dst_ip, config=self.config)
             self.transmitter.start_transmission_thread()
             
             logger.info("系统初始化完成")
