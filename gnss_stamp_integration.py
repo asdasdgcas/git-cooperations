@@ -143,9 +143,52 @@ class NetworkTransmitter:
         self.hex_output_file = os.path.join(self.output_dir, f"stamp_encoded_{timestamp}.hex")
         self.json_output_file = os.path.join(self.output_dir, f"stamp_results_{timestamp}.json")
         
+        # 初始化JSON文件结构
+        self._initialize_json_file()
+        
         logger.info(f"输出文件将保存到: {self.output_dir}")
         logger.info(f"HEX文件: {self.hex_output_file}")
         logger.info(f"JSON文件: {self.json_output_file}")
+    
+    def _initialize_json_file(self):
+        """初始化JSON文件结构"""
+        try:
+            initial_data = {
+                "metadata": {
+                    "encoder_version": "2.0.0",
+                    "encode_timestamp": datetime.now().isoformat(),
+                    "source_file_info": {
+                        "pos_file": self.config.get('pos_file_path', 'realtime_serial'),
+                        "device_id": self.config.get('device_id', 'unknown'),
+                        "link_id": self.config.get('link_id', 0),
+                        "output_directory": self.output_dir
+                    },
+                    "network_info": {
+                        "src_ip": self.src_ip,
+                        "dst_ip": self.dst_ip
+                    },
+                    "statistics": {
+                        "total_packets": 0,
+                        "successful_encodes": 0,
+                        "failed_encodes": 0,
+                        "success_rate": 0.0,
+                        "total_bytes": 0,
+                        "average_packet_size": 0.0,
+                        "min_packet_size": 0,
+                        "max_packet_size": 0
+                    }
+                },
+                "encoded_packets": []
+            }
+            
+            # 写入初始JSON结构
+            with open(self.json_output_file, 'w', encoding='utf-8') as f:
+                json.dump(initial_data, f, indent=2, ensure_ascii=False)
+                
+            logger.info(f"✅ JSON文件已初始化: {os.path.basename(self.json_output_file)}")
+            
+        except Exception as e:
+            logger.error(f"初始化JSON文件失败: {e}")
         
     def enqueue_stamp_packet(self, stamp_payload: bytes):
         """将STAMP数据包加入传输队列"""
@@ -207,9 +250,59 @@ class NetworkTransmitter:
                 f.write(f"#{self.transmitted_count + 1} [{datetime.now().strftime('%Y-%m-%d %H:%M:%S')}] "
                        f"长度={len(stamp_payload)}字节\n")
                 f.write(f"{stamp_payload.hex().upper()}\n\n")
+            
+            # 实时更新JSON文件
+            self._update_json_file_realtime(result_info)
                 
         except Exception as e:
             logger.error(f"保存编码结果失败: {e}")
+    
+    def _update_json_file_realtime(self, result_info: dict):
+        """实时更新JSON文件"""
+        try:
+            # 读取现有JSON文件
+            with open(self.json_output_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            # 添加新的数据包
+            data['encoded_packets'].append(result_info)
+            
+            # 更新统计信息
+            total_packets = len(data['encoded_packets'])
+            successful_encodes = len([p for p in data['encoded_packets'] if 'decode_error' not in p])
+            failed_encodes = total_packets - successful_encodes
+            success_rate = (successful_encodes / total_packets * 100) if total_packets > 0 else 0
+            
+            # 计算字节统计
+            packet_sizes = [p['raw_data']['payload_length'] for p in data['encoded_packets'] if 'raw_data' in p]
+            total_bytes = sum(packet_sizes)
+            average_packet_size = total_bytes / len(packet_sizes) if packet_sizes else 0
+            min_packet_size = min(packet_sizes) if packet_sizes else 0
+            max_packet_size = max(packet_sizes) if packet_sizes else 0
+            
+            # 更新统计信息
+            data['metadata']['statistics'].update({
+                'total_packets': total_packets,
+                'successful_encodes': successful_encodes,
+                'failed_encodes': failed_encodes,
+                'success_rate': success_rate,
+                'total_bytes': total_bytes,
+                'average_packet_size': average_packet_size,
+                'min_packet_size': min_packet_size,
+                'max_packet_size': max_packet_size
+            })
+            
+            # 更新编码时间戳
+            data['metadata']['encode_timestamp'] = datetime.now().isoformat()
+            
+            # 写回JSON文件
+            with open(self.json_output_file, 'w', encoding='utf-8') as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            
+            logger.debug(f"✅ JSON文件已实时更新: 数据包 #{result_info['packet_index']}")
+            
+        except Exception as e:
+            logger.error(f"实时更新JSON文件失败: {e}")
     
     def _decode_stamp_payload(self, stamp_payload: bytes) -> dict:
         """解码STAMP数据包获取详细信息"""
@@ -299,54 +392,27 @@ class NetworkTransmitter:
             return None
     
     def finalize_output(self):
-        """完成处理后保存完整的JSON结果文件"""
+        """完成处理后的最终统计和日志输出"""
         try:
-            # 统计编码成功和失败的数据包
-            successful_encodes = len([r for r in self.encoded_results if 'decode_error' not in r])
-            failed_encodes = len([r for r in self.encoded_results if 'decode_error' in r])
-            success_rate = (successful_encodes / len(self.encoded_results) * 100) if self.encoded_results else 0
-            
-            # 准备完整的输出数据（匹配解码器格式）
-            output_data = {
-                'metadata': {
-                    'encoder_version': '2.0.0',
-                    'encode_timestamp': datetime.now().isoformat(),
-                    'source_file_info': {
-                        'pos_file': self.config.get('pos_file_path', 'unknown'),
-                        'device_id': self.config.get('device_id', 'unknown'),
-                        'link_id': self.config.get('link_id', 0),
-                        'output_directory': self.output_dir
-                    },
-                    'network_info': {
-                        'src_ip': self.src_ip,
-                        'dst_ip': self.dst_ip
-                    },
-                    'statistics': {
-                        'total_packets': len(self.encoded_results),
-                        'successful_encodes': successful_encodes,
-                        'failed_encodes': failed_encodes,
-                        'success_rate': success_rate,
-                        'total_bytes': sum(result['raw_data']['payload_length'] for result in self.encoded_results if 'raw_data' in result),
-                        'average_packet_size': sum(result['raw_data']['payload_length'] for result in self.encoded_results if 'raw_data' in result) / len(self.encoded_results) if self.encoded_results else 0,
-                        'min_packet_size': min(result['raw_data']['payload_length'] for result in self.encoded_results if 'raw_data' in result) if self.encoded_results else 0,
-                        'max_packet_size': max(result['raw_data']['payload_length'] for result in self.encoded_results if 'raw_data' in result) if self.encoded_results else 0
-                    }
-                },
-                'encoded_packets': self.encoded_results
-            }
-            
-            # 保存JSON文件
-            with open(self.json_output_file, 'w', encoding='utf-8') as f:
-                json.dump(output_data, f, indent=2, ensure_ascii=False)
-            
-            logger.info(f"✅ STAMP编码结果已保存:")
-            logger.info(f"   📁 输出目录: {self.output_dir}")
-            logger.info(f"   📄 HEX文件: {os.path.basename(self.hex_output_file)} ({len(self.encoded_results)} 个数据包)")
-            logger.info(f"   📋 JSON文件: {os.path.basename(self.json_output_file)} (包含详细解码信息)")
-            logger.info(f"   📊 编码统计: 成功 {successful_encodes}/{len(self.encoded_results)} ({success_rate:.1f}%)")
+            # 读取最终的JSON文件获取统计信息
+            if os.path.exists(self.json_output_file):
+                with open(self.json_output_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                stats = data['metadata']['statistics']
+                
+                logger.info(f"✅ STAMP编码结果已完成:")
+                logger.info(f"   📁 输出目录: {self.output_dir}")
+                logger.info(f"   📄 HEX文件: {os.path.basename(self.hex_output_file)} ({stats['total_packets']} 个数据包)")
+                logger.info(f"   📋 JSON文件: {os.path.basename(self.json_output_file)} (实时更新，包含详细解码信息)")
+                logger.info(f"   📊 编码统计: 成功 {stats['successful_encodes']}/{stats['total_packets']} ({stats['success_rate']:.1f}%)")
+                logger.info(f"   💾 总字节数: {stats['total_bytes']} 字节")
+                logger.info(f"   📏 平均包大小: {stats['average_packet_size']:.1f} 字节")
+            else:
+                logger.warning("JSON文件不存在，无法显示最终统计")
             
         except Exception as e:
-            logger.error(f"保存最终结果失败: {e}")
+            logger.error(f"获取最终统计失败: {e}")
     
     def start_transmission_thread(self):
         """启动传输线程"""
