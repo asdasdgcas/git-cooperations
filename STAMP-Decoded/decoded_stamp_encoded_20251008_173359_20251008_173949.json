@@ -1,0 +1,1714 @@
+{
+  "metadata": {
+    "decoder_version": "2.0.0",
+    "decode_timestamp": "2025-10-08T09:39:49.486696+00:00",
+    "source_file_info": {
+      "source_file": "D:\\LXZ-PVT-main\\IGS-Data\\STAMP-Realtime\\stamp_encoded_20251008_173359.hex",
+      "file_type": "hex",
+      "file_size": 14697,
+      "file_modified": "2025-10-08T17:35:03.827487",
+      "decode_timestamp": "2025-10-08T17:39:49.338807",
+      "log_file": "STAMP-Decoded\\decode_stamp_encoded_20251008_173359_20251008_173949.log"
+    },
+    "statistics": {
+      "total_packets": 65,
+      "successful_decodes": 65,
+      "crc_failures": 0,
+      "format_errors": 0,
+      "other_errors": 0,
+      "success_rate": 100.0
+    }
+  },
+  "decoded_packets": [
+    {
+      "packet_index": 1,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916038,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:33:58+00:00"
+      },
+      "position": {
+        "latitude": 30.52941636,
+        "longitude": 114.35106664,
+        "altitude": 77.34830000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "8F95",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 2,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916039,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:33:59+00:00"
+      },
+      "position": {
+        "latitude": 30.52941635,
+        "longitude": 114.35106668,
+        "altitude": 77.3559
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "EB45",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 3,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916040,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:00+00:00"
+      },
+      "position": {
+        "latitude": 30.52941637,
+        "longitude": 114.35106673,
+        "altitude": 77.3601
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "3875",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 4,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916041,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:01+00:00"
+      },
+      "position": {
+        "latitude": 30.52941634,
+        "longitude": 114.35106672000002,
+        "altitude": 77.3563
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "01FF",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 5,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916042,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:02+00:00"
+      },
+      "position": {
+        "latitude": 30.52941632,
+        "longitude": 114.35106673999998,
+        "altitude": 77.3671
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "813A",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 6,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916043,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:03+00:00"
+      },
+      "position": {
+        "latitude": 30.52941631,
+        "longitude": 114.35106672000002,
+        "altitude": 77.3623
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "D8D4",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 7,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916044,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:04+00:00"
+      },
+      "position": {
+        "latitude": 30.529416300000005,
+        "longitude": 114.35106668999998,
+        "altitude": 77.36160000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "27AD",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 8,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916045,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:05+00:00"
+      },
+      "position": {
+        "latitude": 30.529416630000007,
+        "longitude": 114.35106679999998,
+        "altitude": 77.3422
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "62E6",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 9,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916046,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:06+00:00"
+      },
+      "position": {
+        "latitude": 30.52941658,
+        "longitude": 114.35106677,
+        "altitude": 77.343
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "4B57",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 10,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916047,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:07+00:00"
+      },
+      "position": {
+        "latitude": 30.529416519999998,
+        "longitude": 114.35106675,
+        "altitude": 77.34140000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "EBC4",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 11,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916048,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:08+00:00"
+      },
+      "position": {
+        "latitude": 30.529416390000005,
+        "longitude": 114.35106666999998,
+        "altitude": 77.3401
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "2A40",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 12,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916049,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:09+00:00"
+      },
+      "position": {
+        "latitude": 30.52941629,
+        "longitude": 114.35106668,
+        "altitude": 77.3653
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "89A8",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 13,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916050,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:10+00:00"
+      },
+      "position": {
+        "latitude": 30.529416200000007,
+        "longitude": 114.35106666999998,
+        "altitude": 77.3732
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "00BE",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 14,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916051,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:11+00:00"
+      },
+      "position": {
+        "latitude": 30.52941616,
+        "longitude": 114.35106664,
+        "altitude": 77.374
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "0832",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 15,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916052,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:12+00:00"
+      },
+      "position": {
+        "latitude": 30.52941615,
+        "longitude": 114.35106668999998,
+        "altitude": 77.3876
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "E663",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 16,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916053,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:13+00:00"
+      },
+      "position": {
+        "latitude": 30.529416140000002,
+        "longitude": 114.35106668999998,
+        "altitude": 77.389
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "E288",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 17,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916054,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:14+00:00"
+      },
+      "position": {
+        "latitude": 30.52941613,
+        "longitude": 114.35106668,
+        "altitude": 77.3819
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "F6DF",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 18,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916055,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:15+00:00"
+      },
+      "position": {
+        "latitude": 30.52941612,
+        "longitude": 114.35106666999998,
+        "altitude": 77.3648
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "F694",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 19,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916056,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:16+00:00"
+      },
+      "position": {
+        "latitude": 30.52941613,
+        "longitude": 114.35106672000002,
+        "altitude": 77.3723
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "E61B",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 20,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916057,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:17+00:00"
+      },
+      "position": {
+        "latitude": 30.529416140000002,
+        "longitude": 114.35106675,
+        "altitude": 77.38130000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "7323",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 21,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916058,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:18+00:00"
+      },
+      "position": {
+        "latitude": 30.52941612,
+        "longitude": 114.35106680999998,
+        "altitude": 77.37619999999998
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "42CE",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 22,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916059,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:19+00:00"
+      },
+      "position": {
+        "latitude": 30.529416090000005,
+        "longitude": 114.35106685000002,
+        "altitude": 77.379
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "878F",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 23,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916060,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:20+00:00"
+      },
+      "position": {
+        "latitude": 30.52941606,
+        "longitude": 114.35106680999998,
+        "altitude": 77.372
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "3973",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 24,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916061,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:21+00:00"
+      },
+      "position": {
+        "latitude": 30.529416050000002,
+        "longitude": 114.35106673,
+        "altitude": 77.34960000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "9B70",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 25,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916062,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:22+00:00"
+      },
+      "position": {
+        "latitude": 30.52941606,
+        "longitude": 114.35106668,
+        "altitude": 77.32979999999999
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "FD0C",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 26,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916063,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:23+00:00"
+      },
+      "position": {
+        "latitude": 30.529416050000002,
+        "longitude": 114.3510666,
+        "altitude": 77.3045
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "D5BB",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 27,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916064,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:24+00:00"
+      },
+      "position": {
+        "latitude": 30.52941604,
+        "longitude": 114.35106664,
+        "altitude": 77.30000000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "1CE0",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 28,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916065,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:25+00:00"
+      },
+      "position": {
+        "latitude": 30.52941604,
+        "longitude": 114.35106665,
+        "altitude": 77.2949
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "DA88",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 29,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916066,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:26+00:00"
+      },
+      "position": {
+        "latitude": 30.52941602,
+        "longitude": 114.35106666999998,
+        "altitude": 77.30250000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "02A5",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 30,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916067,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:27+00:00"
+      },
+      "position": {
+        "latitude": 30.529416000000005,
+        "longitude": 114.35106663000002,
+        "altitude": 77.2896
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "09E1",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 31,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916068,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:28+00:00"
+      },
+      "position": {
+        "latitude": 30.52941598,
+        "longitude": 114.35106661,
+        "altitude": 77.28370000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "B8A2",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 32,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916069,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:29+00:00"
+      },
+      "position": {
+        "latitude": 30.52941597,
+        "longitude": 114.35106663000002,
+        "altitude": 77.27940000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "3C6F",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 33,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916070,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:30+00:00"
+      },
+      "position": {
+        "latitude": 30.529415940000007,
+        "longitude": 114.35106668,
+        "altitude": 77.2821
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "28CC",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 34,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916071,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:31+00:00"
+      },
+      "position": {
+        "latitude": 30.52941593,
+        "longitude": 114.35106676000001,
+        "altitude": 77.3021
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "9566",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 35,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916072,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:32+00:00"
+      },
+      "position": {
+        "latitude": 30.52941593,
+        "longitude": 114.35106678,
+        "altitude": 77.2995
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "45B5",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 36,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916073,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:33+00:00"
+      },
+      "position": {
+        "latitude": 30.529415909999997,
+        "longitude": 114.35106675,
+        "altitude": 77.301
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "C318",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 37,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916074,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:34+00:00"
+      },
+      "position": {
+        "latitude": 30.5294159,
+        "longitude": 114.35106673,
+        "altitude": 77.297
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "AB02",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 38,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916075,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:35+00:00"
+      },
+      "position": {
+        "latitude": 30.52941589,
+        "longitude": 114.35106672000002,
+        "altitude": 77.2921
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "15A3",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 39,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916076,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:36+00:00"
+      },
+      "position": {
+        "latitude": 30.5294159,
+        "longitude": 114.35106670999998,
+        "altitude": 77.28790000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "AC40",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 40,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916077,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:37+00:00"
+      },
+      "position": {
+        "latitude": 30.529415909999997,
+        "longitude": 114.35106668999998,
+        "altitude": 77.2873
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "E430",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 41,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916078,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:38+00:00"
+      },
+      "position": {
+        "latitude": 30.52941589,
+        "longitude": 114.35106670999998,
+        "altitude": 77.28620000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "F197",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 42,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916079,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:39+00:00"
+      },
+      "position": {
+        "latitude": 30.529415840000006,
+        "longitude": 114.35106670000002,
+        "altitude": 77.2901
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "70AB",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 43,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916080,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:40+00:00"
+      },
+      "position": {
+        "latitude": 30.52941583,
+        "longitude": 114.35106670000002,
+        "altitude": 77.2908
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "2E79",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 44,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916081,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:41+00:00"
+      },
+      "position": {
+        "latitude": 30.52941586,
+        "longitude": 114.35106670000002,
+        "altitude": 77.276
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "8DCC",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 45,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916082,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:42+00:00"
+      },
+      "position": {
+        "latitude": 30.52941585,
+        "longitude": 114.35106664,
+        "altitude": 77.27309999999999
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "A75C",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 46,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916083,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:43+00:00"
+      },
+      "position": {
+        "latitude": 30.52941585,
+        "longitude": 114.3510666,
+        "altitude": 77.27559999999998
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "2DAB",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 47,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916084,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:44+00:00"
+      },
+      "position": {
+        "latitude": 30.52941589,
+        "longitude": 114.35106668,
+        "altitude": 77.2804
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "DB69",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 48,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916085,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:45+00:00"
+      },
+      "position": {
+        "latitude": 30.52941588,
+        "longitude": 114.35106668,
+        "altitude": 77.27340000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "4645",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 49,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916086,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:46+00:00"
+      },
+      "position": {
+        "latitude": 30.52941588,
+        "longitude": 114.35106661,
+        "altitude": 77.2606
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "78E5",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 50,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916087,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:47+00:00"
+      },
+      "position": {
+        "latitude": 30.52941586,
+        "longitude": 114.35106664,
+        "altitude": 77.26350000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "45CB",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 51,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916088,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:48+00:00"
+      },
+      "position": {
+        "latitude": 30.52941585,
+        "longitude": 114.35106663000002,
+        "altitude": 77.245
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "2F03",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 52,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916089,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:49+00:00"
+      },
+      "position": {
+        "latitude": 30.52941583,
+        "longitude": 114.35106663000002,
+        "altitude": 77.2468
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "AC91",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 53,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916090,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:50+00:00"
+      },
+      "position": {
+        "latitude": 30.52941581,
+        "longitude": 114.35106668,
+        "altitude": 77.2538
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "CC2C",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 54,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916091,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:51+00:00"
+      },
+      "position": {
+        "latitude": 30.52941583,
+        "longitude": 114.35106670000002,
+        "altitude": 77.2462
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "F1D4",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 55,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916092,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:52+00:00"
+      },
+      "position": {
+        "latitude": 30.52941583,
+        "longitude": 114.35106666,
+        "altitude": 77.2382
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "64C5",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 56,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916093,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:53+00:00"
+      },
+      "position": {
+        "latitude": 30.5294158,
+        "longitude": 114.35106666999998,
+        "altitude": 77.2352
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "6721",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 57,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916094,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:54+00:00"
+      },
+      "position": {
+        "latitude": 30.5294158,
+        "longitude": 114.35106661,
+        "altitude": 77.21520000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "58EA",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 58,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916095,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:55+00:00"
+      },
+      "position": {
+        "latitude": 30.52941585,
+        "longitude": 114.35106653,
+        "altitude": 77.2059
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "590B",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 59,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916096,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:56+00:00"
+      },
+      "position": {
+        "latitude": 30.5294159,
+        "longitude": 114.35106644,
+        "altitude": 77.1934
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "D5ED",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 60,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916097,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:57+00:00"
+      },
+      "position": {
+        "latitude": 30.529415909999997,
+        "longitude": 114.35106651999997,
+        "altitude": 77.1977
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "30B7",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 61,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916098,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:58+00:00"
+      },
+      "position": {
+        "latitude": 30.529415909999997,
+        "longitude": 114.35106646,
+        "altitude": 77.1968
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "A614",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 62,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916099,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:59+00:00"
+      },
+      "position": {
+        "latitude": 30.529415870000005,
+        "longitude": 114.35106651999997,
+        "altitude": 77.19420000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "230D",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 63,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916100,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:35:00+00:00"
+      },
+      "position": {
+        "latitude": 30.52941582,
+        "longitude": 114.35106658999997,
+        "altitude": 77.2146
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "6FF2",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 64,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916101,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:35:01+00:00"
+      },
+      "position": {
+        "latitude": 30.52941581,
+        "longitude": 114.35106661999998,
+        "altitude": 77.2202
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "DA36",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 65,
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916102,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:35:02+00:00"
+      },
+      "position": {
+        "latitude": 30.52941581,
+        "longitude": 114.3510666,
+        "altitude": 77.2141
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "9574",
+        "crc_valid": true
+      }
+    }
+  ]
+}

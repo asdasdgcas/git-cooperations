@@ -1,0 +1,13 @@
+{
+    "serial_port": "COM3",
+    "serial_baudrate": 115200,
+    "device_id": "DEADBEEFCAFEBABE",
+    "link_id": 1024,
+    "sync_status": "beidouLocked",
+    "src_ip": "2001:db8:1::1",
+    "dst_ip": "2001:db8:2::2",
+    "output_dir": "IGS-Data/STAMP-Realtime",
+    "log_level": "INFO",
+    "nmea_buffer_timeout": 2.0,
+    "processing_stats_interval": 10
+}

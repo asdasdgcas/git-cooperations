@@ -1,0 +1,2173 @@
+{
+  "metadata": {
+    "encoder_version": "2.0.0",
+    "encode_timestamp": "2025-10-08T17:35:06.621608",
+    "source_file_info": {
+      "pos_file": "unknown",
+      "device_id": "DEADBEEFCAFEBABE",
+      "link_id": 1024,
+      "output_directory": "IGS-Data/STAMP-Realtime"
+    },
+    "network_info": {
+      "src_ip": "2001:db8:1::1",
+      "dst_ip": "2001:db8:2::2"
+    },
+    "statistics": {
+      "total_packets": 65,
+      "successful_encodes": 65,
+      "failed_encodes": 0,
+      "success_rate": 100.0,
+      "total_bytes": 5824,
+      "average_packet_size": 89.6,
+      "min_packet_size": 77,
+      "max_packet_size": 106
+    }
+  },
+  "encoded_packets": [
+    {
+      "packet_index": 1,
+      "encoding_timestamp": "2025-10-08T17:34:00.152239",
+      "raw_data": {
+        "payload_length": 80,
+        "payload_hex": "304E020101020468E63006020100090E0333303532393431363336452D38090F033131343335313036363634452D38090A03373733343833452D340408DEADBEEFCAFEBABE020204000A010204028F95",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916038,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:33:58+00:00"
+      },
+      "position": {
+        "latitude": 30.52941636,
+        "longitude": 114.35106664,
+        "altitude": 77.34830000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "8F95",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 2,
+      "encoding_timestamp": "2025-10-08T17:34:00.829777",
+      "raw_data": {
+        "payload_length": 91,
+        "payload_hex": "3059020101020468E63007020100090E0333303532393431363335452D38090F033131343335313036363638452D3809150337373335353930303030303030303031452D31340408DEADBEEFCAFEBABE020204000A01020402EB45",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916039,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:33:59+00:00"
+      },
+      "position": {
+        "latitude": 30.52941635,
+        "longitude": 114.35106668,
+        "altitude": 77.3559
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "EB45",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 3,
+      "encoding_timestamp": "2025-10-08T17:34:01.828867",
+      "raw_data": {
+        "payload_length": 80,
+        "payload_hex": "304E020101020468E63008020100090E0333303532393431363337452D38090F033131343335313036363733452D38090A03373733363031452D340408DEADBEEFCAFEBABE020204000A010204023875",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916040,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:00+00:00"
+      },
+      "position": {
+        "latitude": 30.52941637,
+        "longitude": 114.35106673,
+        "altitude": 77.3601
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "3875",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 4,
+      "encoding_timestamp": "2025-10-08T17:34:02.828805",
+      "raw_data": {
+        "payload_length": 98,
+        "payload_hex": "3060020101020468E63009020100090E0333303532393431363334452D380916033131343335313036363732303030303032452D313409150337373335363330303030303030303031452D31340408DEADBEEFCAFEBABE020204000A0102040201FF",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916041,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:01+00:00"
+      },
+      "position": {
+        "latitude": 30.52941634,
+        "longitude": 114.35106672000002,
+        "altitude": 77.3563
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "01FF",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 5,
+      "encoding_timestamp": "2025-10-08T17:34:03.826583",
+      "raw_data": {
+        "payload_length": 98,
+        "payload_hex": "3060020101020468E6300A020100090E0333303532393431363332452D380916033131343335313036363733393939393938452D313409150337373336373039393939393939393939452D31340408DEADBEEFCAFEBABE020204000A01020402813A",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916042,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:02+00:00"
+      },
+      "position": {
+        "latitude": 30.52941632,
+        "longitude": 114.35106673999998,
+        "altitude": 77.3671
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "813A",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 6,
+      "encoding_timestamp": "2025-10-08T17:34:04.829859",
+      "raw_data": {
+        "payload_length": 95,
+        "payload_hex": "305D020101020468E6300B0201000916033330353239343136333039393939393936452D31350916033131343335313036363732303030303032452D3134090A03373733363233452D340408DEADBEEFCAFEBABE020204000A01020402D8D4",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916043,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:03+00:00"
+      },
+      "position": {
+        "latitude": 30.52941631,
+        "longitude": 114.35106672000002,
+        "altitude": 77.3623
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "D8D4",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 7,
+      "encoding_timestamp": "2025-10-08T17:34:05.827488",
+      "raw_data": {
+        "payload_length": 95,
+        "payload_hex": "305D020101020468E6300C0201000916033330353239343136333030303030303034452D31350916033131343335313036363638393939393938452D3134090A03373733363136452D340408DEADBEEFCAFEBABE020204000A0102040227AD",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916044,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:04+00:00"
+      },
+      "position": {
+        "latitude": 30.529416300000005,
+        "longitude": 114.35106668999998,
+        "altitude": 77.36160000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "27AD",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 8,
+      "encoding_timestamp": "2025-10-08T17:34:06.830467",
+      "raw_data": {
+        "payload_length": 95,
+        "payload_hex": "305D020101020468E6300D0201000916033330353239343136363330303030303034452D31350916033131343335313036363739393939393938452D3134090A03373733343232452D340408DEADBEEFCAFEBABE020204000A0102040262E6",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916045,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:05+00:00"
+      },
+      "position": {
+        "latitude": 30.529416630000007,
+        "longitude": 114.35106679999998,
+        "altitude": 77.3422
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "62E6",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 9,
+      "encoding_timestamp": "2025-10-08T17:34:07.826944",
+      "raw_data": {
+        "payload_length": 99,
+        "payload_hex": "3061020101020468E6300E0201000916033330353239343136353739393939393936452D3135090F033131343335313036363737452D3809150337373334333030303030303030303031452D31340408DEADBEEFCAFEBABE020204000A010204024B57",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916046,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:06+00:00"
+      },
+      "position": {
+        "latitude": 30.52941658,
+        "longitude": 114.35106677,
+        "altitude": 77.343
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "4B57",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 10,
+      "encoding_timestamp": "2025-10-08T17:34:08.828408",
+      "raw_data": {
+        "payload_length": 88,
+        "payload_hex": "3056020101020468E6300F0201000916033330353239343136353139393939393936452D3135090F033131343335313036363735452D38090A03373733343134452D340408DEADBEEFCAFEBABE020204000A01020402EBC4",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916047,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:07+00:00"
+      },
+      "position": {
+        "latitude": 30.529416519999998,
+        "longitude": 114.35106675,
+        "altitude": 77.34140000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "EBC4",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 11,
+      "encoding_timestamp": "2025-10-08T17:34:09.829385",
+      "raw_data": {
+        "payload_length": 95,
+        "payload_hex": "305D020101020468E630100201000916033330353239343136333930303030303034452D31350916033131343335313036363636393939393938452D3134090A03373733343031452D340408DEADBEEFCAFEBABE020204000A010204022A40",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916048,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:08+00:00"
+      },
+      "position": {
+        "latitude": 30.529416390000005,
+        "longitude": 114.35106666999998,
+        "altitude": 77.3401
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "2A40",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 12,
+      "encoding_timestamp": "2025-10-08T17:34:10.833251",
+      "raw_data": {
+        "payload_length": 80,
+        "payload_hex": "304E020101020468E63011020100090E0333303532393431363239452D38090F033131343335313036363638452D38090A03373733363533452D340408DEADBEEFCAFEBABE020204000A0102040289A8",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916049,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:09+00:00"
+      },
+      "position": {
+        "latitude": 30.52941629,
+        "longitude": 114.35106668,
+        "altitude": 77.3653
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "89A8",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 13,
+      "encoding_timestamp": "2025-10-08T17:34:11.826618",
+      "raw_data": {
+        "payload_length": 95,
+        "payload_hex": "305D020101020468E630120201000916033330353239343136323030303030303034452D31350916033131343335313036363636393939393938452D3134090A03373733373332452D340408DEADBEEFCAFEBABE020204000A0102040200BE",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916050,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:10+00:00"
+      },
+      "position": {
+        "latitude": 30.529416200000007,
+        "longitude": 114.35106666999998,
+        "altitude": 77.3732
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "00BE",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 14,
+      "encoding_timestamp": "2025-10-08T17:34:12.827393",
+      "raw_data": {
+        "payload_length": 79,
+        "payload_hex": "304D020101020468E63013020100090E0333303532393431363136452D38090F033131343335313036363634452D380909033737333734452D330408DEADBEEFCAFEBABE020204000A010204020832",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916051,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:11+00:00"
+      },
+      "position": {
+        "latitude": 30.52941616,
+        "longitude": 114.35106664,
+        "altitude": 77.374
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "0832",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 15,
+      "encoding_timestamp": "2025-10-08T17:34:13.828433",
+      "raw_data": {
+        "payload_length": 87,
+        "payload_hex": "3055020101020468E63014020100090E0333303532393431363135452D380916033131343335313036363638393939393938452D3134090A03373733383736452D340408DEADBEEFCAFEBABE020204000A01020402E663",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916052,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:12+00:00"
+      },
+      "position": {
+        "latitude": 30.52941615,
+        "longitude": 114.35106668999998,
+        "altitude": 77.3876
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "E663",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 16,
+      "encoding_timestamp": "2025-10-08T17:34:14.830846",
+      "raw_data": {
+        "payload_length": 86,
+        "payload_hex": "3054020101020468E63015020100090E0333303532393431363134452D380916033131343335313036363638393939393938452D31340909033737333839452D330408DEADBEEFCAFEBABE020204000A01020402E288",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916053,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:13+00:00"
+      },
+      "position": {
+        "latitude": 30.529416140000002,
+        "longitude": 114.35106668999998,
+        "altitude": 77.389
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "E288",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 17,
+      "encoding_timestamp": "2025-10-08T17:34:15.826794",
+      "raw_data": {
+        "payload_length": 80,
+        "payload_hex": "304E020101020468E63016020100090E0333303532393431363133452D38090F033131343335313036363638452D38090A03373733383139452D340408DEADBEEFCAFEBABE020204000A01020402F6DF",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916054,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:14+00:00"
+      },
+      "position": {
+        "latitude": 30.52941613,
+        "longitude": 114.35106668,
+        "altitude": 77.3819
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "F6DF",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 18,
+      "encoding_timestamp": "2025-10-08T17:34:16.830286",
+      "raw_data": {
+        "payload_length": 87,
+        "payload_hex": "3055020101020468E63017020100090E0333303532393431363132452D380916033131343335313036363636393939393938452D3134090A03373733363438452D340408DEADBEEFCAFEBABE020204000A01020402F694",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916055,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:15+00:00"
+      },
+      "position": {
+        "latitude": 30.52941612,
+        "longitude": 114.35106666999998,
+        "altitude": 77.3648
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "F694",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 19,
+      "encoding_timestamp": "2025-10-08T17:34:17.829978",
+      "raw_data": {
+        "payload_length": 98,
+        "payload_hex": "3060020101020468E63018020100090E0333303532393431363133452D380916033131343335313036363732303030303032452D313409150337373337323239393939393939393939452D31340408DEADBEEFCAFEBABE020204000A01020402E61B",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916056,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:16+00:00"
+      },
+      "position": {
+        "latitude": 30.52941613,
+        "longitude": 114.35106672000002,
+        "altitude": 77.3723
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "E61B",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 20,
+      "encoding_timestamp": "2025-10-08T17:34:18.827089",
+      "raw_data": {
+        "payload_length": 80,
+        "payload_hex": "304E020101020468E63019020100090E0333303532393431363134452D38090F033131343335313036363735452D38090A03373733383133452D340408DEADBEEFCAFEBABE020204000A010204027323",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916057,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:17+00:00"
+      },
+      "position": {
+        "latitude": 30.529416140000002,
+        "longitude": 114.35106675,
+        "altitude": 77.38130000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "7323",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 21,
+      "encoding_timestamp": "2025-10-08T17:34:19.827694",
+      "raw_data": {
+        "payload_length": 98,
+        "payload_hex": "3060020101020468E6301A020100090E0333303532393431363132452D380916033131343335313036363830393939393938452D313409150337373337363139393939393939393939452D31340408DEADBEEFCAFEBABE020204000A0102040242CE",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916058,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:18+00:00"
+      },
+      "position": {
+        "latitude": 30.52941612,
+        "longitude": 114.35106680999998,
+        "altitude": 77.37619999999998
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "42CE",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 22,
+      "encoding_timestamp": "2025-10-08T17:34:20.830535",
+      "raw_data": {
+        "payload_length": 94,
+        "payload_hex": "305C020101020468E6301B0201000916033330353239343136303930303030303034452D31350916033131343335313036363835303030303032452D31340909033737333739452D330408DEADBEEFCAFEBABE020204000A01020402878F",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916059,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:19+00:00"
+      },
+      "position": {
+        "latitude": 30.529416090000005,
+        "longitude": 114.35106685000002,
+        "altitude": 77.379
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "878F",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 23,
+      "encoding_timestamp": "2025-10-08T17:34:21.826603",
+      "raw_data": {
+        "payload_length": 86,
+        "payload_hex": "3054020101020468E6301C020100090E0333303532393431363036452D380916033131343335313036363830393939393938452D31340909033737333732452D330408DEADBEEFCAFEBABE020204000A010204023973",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916060,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:20+00:00"
+      },
+      "position": {
+        "latitude": 30.52941606,
+        "longitude": 114.35106680999998,
+        "altitude": 77.372
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "3973",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 24,
+      "encoding_timestamp": "2025-10-08T17:34:22.828871",
+      "raw_data": {
+        "payload_length": 80,
+        "payload_hex": "304E020101020468E6301D020100090E0333303532393431363035452D38090F033131343335313036363733452D38090A03373733343936452D340408DEADBEEFCAFEBABE020204000A010204029B70",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916061,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:21+00:00"
+      },
+      "position": {
+        "latitude": 30.529416050000002,
+        "longitude": 114.35106673,
+        "altitude": 77.34960000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "9B70",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 25,
+      "encoding_timestamp": "2025-10-08T17:34:23.830224",
+      "raw_data": {
+        "payload_length": 91,
+        "payload_hex": "3059020101020468E6301E020100090E0333303532393431363036452D38090F033131343335313036363638452D3809150337373332393739393939393939393939452D31340408DEADBEEFCAFEBABE020204000A01020402FD0C",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916062,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:22+00:00"
+      },
+      "position": {
+        "latitude": 30.52941606,
+        "longitude": 114.35106668,
+        "altitude": 77.32979999999999
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "FD0C",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 26,
+      "encoding_timestamp": "2025-10-08T17:34:24.828424",
+      "raw_data": {
+        "payload_length": 79,
+        "payload_hex": "304D020101020468E6301F020100090E0333303532393431363035452D38090E0331313433353130363636452D37090A03373733303435452D340408DEADBEEFCAFEBABE020204000A01020402D5BB",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916063,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:23+00:00"
+      },
+      "position": {
+        "latitude": 30.529416050000002,
+        "longitude": 114.3510666,
+        "altitude": 77.3045
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "D5BB",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 27,
+      "encoding_timestamp": "2025-10-08T17:34:25.830348",
+      "raw_data": {
+        "payload_length": 77,
+        "payload_hex": "304B020101020468E63020020100090E0333303532393431363034452D38090F033131343335313036363634452D38090703373733452D310408DEADBEEFCAFEBABE020204000A010204021CE0",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916064,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:24+00:00"
+      },
+      "position": {
+        "latitude": 30.52941604,
+        "longitude": 114.35106664,
+        "altitude": 77.30000000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "1CE0",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 28,
+      "encoding_timestamp": "2025-10-08T17:34:26.830436",
+      "raw_data": {
+        "payload_length": 80,
+        "payload_hex": "304E020101020468E63021020100090E0333303532393431363034452D38090F033131343335313036363635452D38090A03373732393439452D340408DEADBEEFCAFEBABE020204000A01020402DA88",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916065,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:25+00:00"
+      },
+      "position": {
+        "latitude": 30.52941604,
+        "longitude": 114.35106665,
+        "altitude": 77.2949
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "DA88",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 29,
+      "encoding_timestamp": "2025-10-08T17:34:27.827564",
+      "raw_data": {
+        "payload_length": 87,
+        "payload_hex": "3055020101020468E63022020100090E0333303532393431363032452D380916033131343335313036363636393939393938452D3134090A03373733303235452D340408DEADBEEFCAFEBABE020204000A0102040202A5",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916066,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:26+00:00"
+      },
+      "position": {
+        "latitude": 30.52941602,
+        "longitude": 114.35106666999998,
+        "altitude": 77.30250000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "02A5",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 30,
+      "encoding_timestamp": "2025-10-08T17:34:28.829264",
+      "raw_data": {
+        "payload_length": 106,
+        "payload_hex": "3068020101020468E630230201000916033330353239343136303030303030303034452D31350916033131343335313036363633303030303032452D313409150337373238393539393939393939393939452D31340408DEADBEEFCAFEBABE020204000A0102040209E1",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916067,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:27+00:00"
+      },
+      "position": {
+        "latitude": 30.529416000000005,
+        "longitude": 114.35106663000002,
+        "altitude": 77.2896
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "09E1",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 31,
+      "encoding_timestamp": "2025-10-08T17:34:29.827414",
+      "raw_data": {
+        "payload_length": 88,
+        "payload_hex": "3056020101020468E630240201000916033330353239343135393739393939393936452D3135090F033131343335313036363631452D38090A03373732383337452D340408DEADBEEFCAFEBABE020204000A01020402B8A2",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916068,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:28+00:00"
+      },
+      "position": {
+        "latitude": 30.52941598,
+        "longitude": 114.35106661,
+        "altitude": 77.28370000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "B8A2",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 32,
+      "encoding_timestamp": "2025-10-08T17:34:30.827822",
+      "raw_data": {
+        "payload_length": 95,
+        "payload_hex": "305D020101020468E630250201000916033330353239343135393639393939393936452D31350916033131343335313036363633303030303032452D3134090A03373732373934452D340408DEADBEEFCAFEBABE020204000A010204023C6F",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916069,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:29+00:00"
+      },
+      "position": {
+        "latitude": 30.52941597,
+        "longitude": 114.35106663000002,
+        "altitude": 77.27940000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "3C6F",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 33,
+      "encoding_timestamp": "2025-10-08T17:34:31.828211",
+      "raw_data": {
+        "payload_length": 88,
+        "payload_hex": "3056020101020468E630260201000916033330353239343135393430303030303034452D3135090F033131343335313036363638452D38090A03373732383231452D340408DEADBEEFCAFEBABE020204000A0102040228CC",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916070,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:30+00:00"
+      },
+      "position": {
+        "latitude": 30.529415940000007,
+        "longitude": 114.35106668,
+        "altitude": 77.2821
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "28CC",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 34,
+      "encoding_timestamp": "2025-10-08T17:34:32.827867",
+      "raw_data": {
+        "payload_length": 91,
+        "payload_hex": "3059020101020468E63027020100090E0333303532393431353933452D38090F033131343335313036363736452D3809150337373330323039393939393939393939452D31340408DEADBEEFCAFEBABE020204000A010204029566",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916071,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:31+00:00"
+      },
+      "position": {
+        "latitude": 30.52941593,
+        "longitude": 114.35106676000001,
+        "altitude": 77.3021
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "9566",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 35,
+      "encoding_timestamp": "2025-10-08T17:34:33.830612",
+      "raw_data": {
+        "payload_length": 91,
+        "payload_hex": "3059020101020468E63028020100090E0333303532393431353933452D38090F033131343335313036363738452D3809150337373239393439393939393939393939452D31340408DEADBEEFCAFEBABE020204000A0102040245B5",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916072,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:32+00:00"
+      },
+      "position": {
+        "latitude": 30.52941593,
+        "longitude": 114.35106678,
+        "altitude": 77.2995
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "45B5",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 36,
+      "encoding_timestamp": "2025-10-08T17:34:34.833654",
+      "raw_data": {
+        "payload_length": 87,
+        "payload_hex": "3055020101020468E630290201000916033330353239343135393039393939393936452D3135090F033131343335313036363735452D380909033737333031452D330408DEADBEEFCAFEBABE020204000A01020402C318",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916073,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:33+00:00"
+      },
+      "position": {
+        "latitude": 30.529415909999997,
+        "longitude": 114.35106675,
+        "altitude": 77.301
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "C318",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 37,
+      "encoding_timestamp": "2025-10-08T17:34:35.828552",
+      "raw_data": {
+        "payload_length": 78,
+        "payload_hex": "304C020101020468E6302A020100090D03333035323934313539452D37090F033131343335313036363733452D380909033737323937452D330408DEADBEEFCAFEBABE020204000A01020402AB02",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916074,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:34+00:00"
+      },
+      "position": {
+        "latitude": 30.5294159,
+        "longitude": 114.35106673,
+        "altitude": 77.297
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "AB02",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 38,
+      "encoding_timestamp": "2025-10-08T17:34:36.829148",
+      "raw_data": {
+        "payload_length": 87,
+        "payload_hex": "3055020101020468E6302B020100090E0333303532393431353839452D380916033131343335313036363732303030303032452D3134090A03373732393231452D340408DEADBEEFCAFEBABE020204000A0102040215A3",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916075,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:35+00:00"
+      },
+      "position": {
+        "latitude": 30.52941589,
+        "longitude": 114.35106672000002,
+        "altitude": 77.2921
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "15A3",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 39,
+      "encoding_timestamp": "2025-10-08T17:34:37.833569",
+      "raw_data": {
+        "payload_length": 86,
+        "payload_hex": "3054020101020468E6302C020100090D03333035323934313539452D370916033131343335313036363730393939393938452D3134090A03373732383739452D340408DEADBEEFCAFEBABE020204000A01020402AC40",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916076,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:36+00:00"
+      },
+      "position": {
+        "latitude": 30.5294159,
+        "longitude": 114.35106670999998,
+        "altitude": 77.28790000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "AC40",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 40,
+      "encoding_timestamp": "2025-10-08T17:34:38.831459",
+      "raw_data": {
+        "payload_length": 95,
+        "payload_hex": "305D020101020468E6302D0201000916033330353239343135393039393939393936452D31350916033131343335313036363638393939393938452D3134090A03373732383733452D340408DEADBEEFCAFEBABE020204000A01020402E430",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916077,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:37+00:00"
+      },
+      "position": {
+        "latitude": 30.529415909999997,
+        "longitude": 114.35106668999998,
+        "altitude": 77.2873
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "E430",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 41,
+      "encoding_timestamp": "2025-10-08T17:34:39.827569",
+      "raw_data": {
+        "payload_length": 87,
+        "payload_hex": "3055020101020468E6302E020100090E0333303532393431353839452D380916033131343335313036363730393939393938452D3134090A03373732383632452D340408DEADBEEFCAFEBABE020204000A01020402F197",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916078,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:38+00:00"
+      },
+      "position": {
+        "latitude": 30.52941589,
+        "longitude": 114.35106670999998,
+        "altitude": 77.28620000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "F197",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 42,
+      "encoding_timestamp": "2025-10-08T17:34:40.830220",
+      "raw_data": {
+        "payload_length": 106,
+        "payload_hex": "3068020101020468E6302F0201000916033330353239343135383430303030303034452D31350916033131343335313036363730303030303032452D313409150337373239303039393939393939393939452D31340408DEADBEEFCAFEBABE020204000A0102040270AB",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916079,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:39+00:00"
+      },
+      "position": {
+        "latitude": 30.529415840000006,
+        "longitude": 114.35106670000002,
+        "altitude": 77.2901
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "70AB",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 43,
+      "encoding_timestamp": "2025-10-08T17:34:41.827341",
+      "raw_data": {
+        "payload_length": 87,
+        "payload_hex": "3055020101020468E63030020100090E0333303532393431353833452D380916033131343335313036363730303030303032452D3134090A03373732393038452D340408DEADBEEFCAFEBABE020204000A010204022E79",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916080,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:40+00:00"
+      },
+      "position": {
+        "latitude": 30.52941583,
+        "longitude": 114.35106670000002,
+        "altitude": 77.2908
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "2E79",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 44,
+      "encoding_timestamp": "2025-10-08T17:34:42.827909",
+      "raw_data": {
+        "payload_length": 86,
+        "payload_hex": "3054020101020468E63031020100090E0333303532393431353836452D380916033131343335313036363730303030303032452D31340909033737323736452D330408DEADBEEFCAFEBABE020204000A010204028DCC",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916081,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:41+00:00"
+      },
+      "position": {
+        "latitude": 30.52941586,
+        "longitude": 114.35106670000002,
+        "altitude": 77.276
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "8DCC",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 45,
+      "encoding_timestamp": "2025-10-08T17:34:43.831071",
+      "raw_data": {
+        "payload_length": 99,
+        "payload_hex": "3061020101020468E630320201000916033330353239343135383439393939393936452D3135090F033131343335313036363634452D3809150337373237333039393939393939393939452D31340408DEADBEEFCAFEBABE020204000A01020402A75C",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916082,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:42+00:00"
+      },
+      "position": {
+        "latitude": 30.52941585,
+        "longitude": 114.35106664,
+        "altitude": 77.27309999999999
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "A75C",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 46,
+      "encoding_timestamp": "2025-10-08T17:34:44.829008",
+      "raw_data": {
+        "payload_length": 98,
+        "payload_hex": "3060020101020468E630330201000916033330353239343135383439393939393936452D3135090E0331313433353130363636452D3709150337373237353539393939393939393939452D31340408DEADBEEFCAFEBABE020204000A010204022DAB",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916083,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:43+00:00"
+      },
+      "position": {
+        "latitude": 30.52941585,
+        "longitude": 114.3510666,
+        "altitude": 77.27559999999998
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "2DAB",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 47,
+      "encoding_timestamp": "2025-10-08T17:34:45.830671",
+      "raw_data": {
+        "payload_length": 80,
+        "payload_hex": "304E020101020468E63034020100090E0333303532393431353839452D38090F033131343335313036363638452D38090A03373732383034452D340408DEADBEEFCAFEBABE020204000A01020402DB69",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916084,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:44+00:00"
+      },
+      "position": {
+        "latitude": 30.52941589,
+        "longitude": 114.35106668,
+        "altitude": 77.2804
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "DB69",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 48,
+      "encoding_timestamp": "2025-10-08T17:34:46.830393",
+      "raw_data": {
+        "payload_length": 88,
+        "payload_hex": "3056020101020468E630350201000916033330353239343135383739393939393936452D3135090F033131343335313036363638452D38090A03373732373334452D340408DEADBEEFCAFEBABE020204000A010204024645",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916085,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:45+00:00"
+      },
+      "position": {
+        "latitude": 30.52941588,
+        "longitude": 114.35106668,
+        "altitude": 77.27340000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "4645",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 49,
+      "encoding_timestamp": "2025-10-08T17:34:47.828481",
+      "raw_data": {
+        "payload_length": 99,
+        "payload_hex": "3061020101020468E630360201000916033330353239343135383739393939393936452D3135090F033131343335313036363631452D3809150337373236303539393939393939393939452D31340408DEADBEEFCAFEBABE020204000A0102040278E5",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916086,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:46+00:00"
+      },
+      "position": {
+        "latitude": 30.52941588,
+        "longitude": 114.35106661,
+        "altitude": 77.2606
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "78E5",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 50,
+      "encoding_timestamp": "2025-10-08T17:34:48.831499",
+      "raw_data": {
+        "payload_length": 80,
+        "payload_hex": "304E020101020468E63037020100090E0333303532393431353836452D38090F033131343335313036363634452D38090A03373732363335452D340408DEADBEEFCAFEBABE020204000A0102040245CB",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916087,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:47+00:00"
+      },
+      "position": {
+        "latitude": 30.52941586,
+        "longitude": 114.35106664,
+        "altitude": 77.26350000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "45CB",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 51,
+      "encoding_timestamp": "2025-10-08T17:34:49.827236",
+      "raw_data": {
+        "payload_length": 94,
+        "payload_hex": "305C020101020468E630380201000916033330353239343135383439393939393936452D31350916033131343335313036363633303030303032452D31340909033737323435452D330408DEADBEEFCAFEBABE020204000A010204022F03",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916088,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:48+00:00"
+      },
+      "position": {
+        "latitude": 30.52941585,
+        "longitude": 114.35106663000002,
+        "altitude": 77.245
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "2F03",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 52,
+      "encoding_timestamp": "2025-10-08T17:34:50.829353",
+      "raw_data": {
+        "payload_length": 98,
+        "payload_hex": "3060020101020468E63039020100090E0333303532393431353833452D380916033131343335313036363633303030303032452D313409150337373234363739393939393939393939452D31340408DEADBEEFCAFEBABE020204000A01020402AC91",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916089,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:49+00:00"
+      },
+      "position": {
+        "latitude": 30.52941583,
+        "longitude": 114.35106663000002,
+        "altitude": 77.2468
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "AC91",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 53,
+      "encoding_timestamp": "2025-10-08T17:34:51.827076",
+      "raw_data": {
+        "payload_length": 80,
+        "payload_hex": "304E020101020468E6303A020100090E0333303532393431353831452D38090F033131343335313036363638452D38090A03373732353338452D340408DEADBEEFCAFEBABE020204000A01020402CC2C",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916090,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:50+00:00"
+      },
+      "position": {
+        "latitude": 30.52941581,
+        "longitude": 114.35106668,
+        "altitude": 77.2538
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "CC2C",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 54,
+      "encoding_timestamp": "2025-10-08T17:34:52.828705",
+      "raw_data": {
+        "payload_length": 87,
+        "payload_hex": "3055020101020468E6303B020100090E0333303532393431353833452D380916033131343335313036363730303030303032452D3134090A03373732343632452D340408DEADBEEFCAFEBABE020204000A01020402F1D4",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916091,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:51+00:00"
+      },
+      "position": {
+        "latitude": 30.52941583,
+        "longitude": 114.35106670000002,
+        "altitude": 77.2462
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "F1D4",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 55,
+      "encoding_timestamp": "2025-10-08T17:34:53.828369",
+      "raw_data": {
+        "payload_length": 91,
+        "payload_hex": "3059020101020468E6303C020100090E0333303532393431353833452D38090F033131343335313036363636452D3809150337373233383230303030303030303031452D31340408DEADBEEFCAFEBABE020204000A0102040264C5",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916092,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:52+00:00"
+      },
+      "position": {
+        "latitude": 30.52941583,
+        "longitude": 114.35106666,
+        "altitude": 77.2382
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "64C5",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 56,
+      "encoding_timestamp": "2025-10-08T17:34:54.828833",
+      "raw_data": {
+        "payload_length": 106,
+        "payload_hex": "3068020101020468E6303D0201000916033330353239343135373939393939393936452D31350916033131343335313036363636393939393938452D313409150337373233353230303030303030303031452D31340408DEADBEEFCAFEBABE020204000A010204026721",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916093,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:53+00:00"
+      },
+      "position": {
+        "latitude": 30.5294158,
+        "longitude": 114.35106666999998,
+        "altitude": 77.2352
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "6721",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 57,
+      "encoding_timestamp": "2025-10-08T17:34:55.829459",
+      "raw_data": {
+        "payload_length": 88,
+        "payload_hex": "3056020101020468E6303E0201000916033330353239343135373939393939393936452D3135090F033131343335313036363631452D38090A03373732313532452D340408DEADBEEFCAFEBABE020204000A0102040258EA",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916094,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:54+00:00"
+      },
+      "position": {
+        "latitude": 30.5294158,
+        "longitude": 114.35106661,
+        "altitude": 77.21520000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "58EA",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 58,
+      "encoding_timestamp": "2025-10-08T17:34:56.830929",
+      "raw_data": {
+        "payload_length": 88,
+        "payload_hex": "3056020101020468E6303F0201000916033330353239343135383439393939393936452D3135090F033131343335313036363533452D38090A03373732303539452D340408DEADBEEFCAFEBABE020204000A01020402590B",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916095,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:55+00:00"
+      },
+      "position": {
+        "latitude": 30.52941585,
+        "longitude": 114.35106653,
+        "altitude": 77.2059
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "590B",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 59,
+      "encoding_timestamp": "2025-10-08T17:34:57.829966",
+      "raw_data": {
+        "payload_length": 79,
+        "payload_hex": "304D020101020468E63040020100090D03333035323934313539452D37090F033131343335313036363434452D38090A03373731393334452D340408DEADBEEFCAFEBABE020204000A01020402D5ED",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916096,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:56+00:00"
+      },
+      "position": {
+        "latitude": 30.5294159,
+        "longitude": 114.35106644,
+        "altitude": 77.1934
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "D5ED",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 60,
+      "encoding_timestamp": "2025-10-08T17:34:58.829106",
+      "raw_data": {
+        "payload_length": 95,
+        "payload_hex": "305D020101020468E630410201000916033330353239343135393039393939393936452D31350916033131343335313036363531393939393938452D3134090A03373731393737452D340408DEADBEEFCAFEBABE020204000A0102040230B7",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916097,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:57+00:00"
+      },
+      "position": {
+        "latitude": 30.529415909999997,
+        "longitude": 114.35106651999997,
+        "altitude": 77.1977
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "30B7",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 61,
+      "encoding_timestamp": "2025-10-08T17:34:59.828590",
+      "raw_data": {
+        "payload_length": 99,
+        "payload_hex": "3061020101020468E630420201000916033330353239343135393039393939393936452D3135090F033131343335313036363436452D3809150337373139363739393939393939393939452D31340408DEADBEEFCAFEBABE020204000A01020402A614",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916098,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:58+00:00"
+      },
+      "position": {
+        "latitude": 30.529415909999997,
+        "longitude": 114.35106646,
+        "altitude": 77.1968
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "A614",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 62,
+      "encoding_timestamp": "2025-10-08T17:35:00.830381",
+      "raw_data": {
+        "payload_length": 95,
+        "payload_hex": "305D020101020468E630430201000916033330353239343135383730303030303034452D31350916033131343335313036363531393939393938452D3134090A03373731393432452D340408DEADBEEFCAFEBABE020204000A01020402230D",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916099,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:34:59+00:00"
+      },
+      "position": {
+        "latitude": 30.529415870000005,
+        "longitude": 114.35106651999997,
+        "altitude": 77.19420000000001
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "230D",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 63,
+      "encoding_timestamp": "2025-10-08T17:35:01.828093",
+      "raw_data": {
+        "payload_length": 87,
+        "payload_hex": "3055020101020468E63044020100090E0333303532393431353832452D380916033131343335313036363538393939393938452D3134090A03373732313436452D340408DEADBEEFCAFEBABE020204000A010204026FF2",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916100,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:35:00+00:00"
+      },
+      "position": {
+        "latitude": 30.52941582,
+        "longitude": 114.35106658999997,
+        "altitude": 77.2146
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "6FF2",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 64,
+      "encoding_timestamp": "2025-10-08T17:35:02.830011",
+      "raw_data": {
+        "payload_length": 98,
+        "payload_hex": "3060020101020468E63045020100090E0333303532393431353831452D380916033131343335313036363631393939393938452D313409150337373232303230303030303030303031452D31340408DEADBEEFCAFEBABE020204000A01020402DA36",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916101,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:35:01+00:00"
+      },
+      "position": {
+        "latitude": 30.52941581,
+        "longitude": 114.35106661999998,
+        "altitude": 77.2202
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "DA36",
+        "crc_valid": true
+      }
+    },
+    {
+      "packet_index": 65,
+      "encoding_timestamp": "2025-10-08T17:35:03.827818",
+      "raw_data": {
+        "payload_length": 79,
+        "payload_hex": "304D020101020468E63046020100090E0333303532393431353831452D38090E0331313433353130363636452D37090A03373732313431452D340408DEADBEEFCAFEBABE020204000A010204029574",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759916102,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T09:35:02+00:00"
+      },
+      "position": {
+        "latitude": 30.52941581,
+        "longitude": 114.3510666,
+        "altitude": 77.2141
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "9574",
+        "crc_valid": true
+      }
+    }
+  ]
+}
