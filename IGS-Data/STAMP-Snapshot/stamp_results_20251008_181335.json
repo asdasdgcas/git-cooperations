@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "encoder_version": "2.0.0",
+    "encode_timestamp": "2025-10-08T18:13:36.804753",
+    "source_file_info": {
+      "pos_file": "realtime_serial",
+      "device_id": "DEADBEEFCAFEBABE",
+      "link_id": 1024,
+      "output_directory": "IGS-Data/STAMP-Snapshot"
+    },
+    "network_info": {
+      "src_ip": "2001:db8:1::1",
+      "dst_ip": "2001:db8:2::2"
+    },
+    "statistics": {
+      "total_packets": 1,
+      "successful_encodes": 1,
+      "failed_encodes": 0,
+      "success_rate": 100.0,
+      "total_bytes": 91,
+      "average_packet_size": 91.0,
+      "min_packet_size": 91,
+      "max_packet_size": 91
+    }
+  },
+  "encoded_packets": [
+    {
+      "packet_index": 1,
+      "encoding_timestamp": "2025-10-08T18:13:36.803908",
+      "raw_data": {
+        "payload_length": 91,
+        "payload_hex": "3059020101020468E6394E020100090E0333303532393339343639452D38090F033131343335313036353532452D3809150338373234373630303030303030303031452D31340408DEADBEEFCAFEBABE020204000A01020402BE77",
+        "src_ip": "2001:db8:1::1",
+        "dst_ip": "2001:db8:2::2"
+      },
+      "version": 1,
+      "timestamp": {
+        "timestamp_sec": 1759918414,
+        "timestamp_nsec": 0,
+        "datetime_utc": "2025-10-08T10:13:34+00:00"
+      },
+      "position": {
+        "latitude": 30.52939469,
+        "longitude": 114.35106552,
+        "altitude": 87.2476
+      },
+      "device_info": {
+        "device_id": "DEADBEEFCAFEBABE",
+        "link_id": 1024
+      },
+      "sync_info": {
+        "sync_status": 2,
+        "sync_status_name": "beidouLocked"
+      },
+      "validation": {
+        "crc": "BE77",
+        "crc_valid": true
+      }
+    }
+  ]
+}

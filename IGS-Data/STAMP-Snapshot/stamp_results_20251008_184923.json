@@ -1,0 +1,27 @@
+{
+  "metadata": {
+    "encoder_version": "2.0.0",
+    "encode_timestamp": "2025-10-08T18:49:23.932046",
+    "source_file_info": {
+      "pos_file": "realtime_serial",
+      "device_id": "DEADBEEFCAFEBABE",
+      "link_id": 1024,
+      "output_directory": "IGS-Data/STAMP-Snapshot"
+    },
+    "network_info": {
+      "src_ip": "2001:db8:1::1",
+      "dst_ip": "2001:db8:2::2"
+    },
+    "statistics": {
+      "total_packets": 0,
+      "successful_encodes": 0,
+      "failed_encodes": 0,
+      "success_rate": 0.0,
+      "total_bytes": 0,
+      "average_packet_size": 0.0,
+      "min_packet_size": 0,
+      "max_packet_size": 0
+    }
+  },
+  "encoded_packets": []
+}
